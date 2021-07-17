@@ -15,7 +15,7 @@ int main()
 
     printf("\n ~~~ Please enter the bound of 'x' : ");
     scanf("%d %d", &lb, &ub);
-    printf("\n ~~~ The step long is : ");
+    printf("\n ~~~ The step length is : ");
     scanf("%d", &step);
     printf("\nThe graph of the function on [ %d , %d ] is \n\n", lb, ub);
     printf("-----------------------------------------------------------------> y\n");
@@ -35,9 +35,8 @@ void graph(int x,int y)      //core function body.
 {
     for (; lb <= x && x <= 0;)
     {
-        y = x * x;  //This should be the analytic expression of your function , input as y = f(x).
+        y = x * x;  //analytic expression of function , input as y = f(x).
         int n = 0;
-
         printf("|");
 
         while( 0 <= n && n <= y-1 )
@@ -47,7 +46,6 @@ void graph(int x,int y)      //core function body.
         }
 
         printf("+  (%d,%d)", x, y);
-
         n = 1;      //Reuse the value 'n' .
 
         while( 0 <= n && n <= step )
@@ -62,9 +60,8 @@ void graph(int x,int y)      //core function body.
 
     for (; 0 <= x && x <= ub;)
     {
-        y = x * x;  //This should be the analytic expression of your function , input as y = f(x).
+        y = x * x;  //analytic expression of function , input as y = f(x).
         int n = 0;
-
         printf("|");
         
         while( 0 <= n && n <= y-1 )
@@ -74,7 +71,6 @@ void graph(int x,int y)      //core function body.
         }
 
         printf("+  (%d,%d)", x, y);
-
         n = 1;      //Reuse the value 'n' .
 
         while( 0 <= n && n <= step )
@@ -85,6 +81,9 @@ void graph(int x,int y)      //core function body.
 
         x = x + step;
         n = 0;
+        
     }
-    
+
+    printf("|\n");
+
 }
