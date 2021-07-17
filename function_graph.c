@@ -24,6 +24,7 @@ int main()
 
     graph(x, y);        //Graph function.
 
+    printf("|\n");
     printf("V x");
     printf("\n\n");
 
@@ -83,7 +84,5 @@ void graph(int x,int y)      //core function body.
         n = 0;
         
     }
-
-    printf("|\n");
 
 }
