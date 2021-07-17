@@ -63,4 +63,5 @@ void draw(int x,int y)      //core function body.
         x = x + 1;
         n = 0;
     }
+    
 }
