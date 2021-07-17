@@ -22,7 +22,7 @@ int main()
 
     x = lb;     //Give 'x' a start value.
 
-    graph(x, y);        //Main function.
+    graph(x, y);        //Graph function.
 
     printf("V x");
     printf("\n\n");
