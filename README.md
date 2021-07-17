@@ -1,2 +1,4 @@
 # IFGD
-function graph drawing.
+
+Integer Function Graph Drawing.
+
