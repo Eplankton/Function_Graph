@@ -1,4 +1,4 @@
-//This program only supports integeral I/O.  2021/7/12
+//This program only supports integeral I/O.  Date: 2021/7/12   From: Eplankton
 
 #include <stdio.h>
 #include <stdlib.h>
